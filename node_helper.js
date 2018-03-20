@@ -213,12 +213,17 @@ module.exports = NodeHelper.create({
                 // get all the parts of the train time
 	            var tLocationCode     = train.LocationCode;
 	            var tLocationName     = train.LocationName;
-	            var tDestination      = train.Destination;
 	            var tDestinationName  = train.DestinationName;
 	            var tDestinationCode  = train.DestinationCode;
+		    var tDestination = this.getStationName(tDestinationCode);
 	            var tLine             = train.Line;
 	            var tMin              = train.Min;            
 	            var trainListPart = stationTrainList[tLocationCode].TrainList;
+// LB vvvvvvvv
+		    
+		    
+
+// LB ^^^^^^^^^^^
                 // build the train part
 	            var trainPart = { Destination: tDestination,
 	                DestinationName: tDestinationName,
