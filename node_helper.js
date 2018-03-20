@@ -215,10 +215,20 @@ module.exports = NodeHelper.create({
 	            var tLocationName     = train.LocationName;
 	            var tDestinationName  = train.DestinationName;
 	            var tDestinationCode  = train.DestinationCode;
-		    var tDestination = this.getStationName(tDestinationCode);
 	            var tLine             = train.Line;
 	            var tMin              = train.Min;            
 	            var trainListPart = stationTrainList[tLocationCode].TrainList;
+		
+		// if value is set in the config for showDestinationFullName, use that value
+		    if (theConfig.showDestinationFullName == "true")
+		    {
+		    	var tDestination = this.getStationName(tDestinationCode);
+		    }
+		    else
+		    {
+		    	var tDestination = train.Destination;
+		    }
+		    
 
                 // build the train part
 	            var trainPart = { Destination: tDestination,
