@@ -86,6 +86,14 @@ The following properties can be configured:
 				<br>This value is <b>OPTIONAL</b>
 			</td>
 		</tr>
+		<tr>
+			<td><code>showDestinationFullName</code></td>
+			<td>Toggle to turn on or off full destination station names. Otherwise it will be an abbreviated destination station name.  Default is on (full station name).<br>
+				<br><b>Example:</b> <code>false</code>
+				<br><b>Default value:</b> <code>true</code>
+				<br>This value is <b>OPTIONAL</b>
+			</td>
+		</tr>
 		<tr>		
 			<td><code>refreshRateIncidents</code></td>
 			<td>Specified in <b>MILLISECONDS</b>, sets the rate at which updates will be made to the metro incidents list. This value defaults to every two minutes. Note setting this value to low, i.e. fast, can use up a lot of alloted daily API calls so don't abuse this value. Also, incidents aren't updated nearly as often as train arrival times.<br>
