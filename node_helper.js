@@ -219,11 +219,7 @@ module.exports = NodeHelper.create({
 	            var tLine             = train.Line;
 	            var tMin              = train.Min;            
 	            var trainListPart = stationTrainList[tLocationCode].TrainList;
-// LB vvvvvvvv
-		    
-		    
 
-// LB ^^^^^^^^^^^
                 // build the train part
 	            var trainPart = { Destination: tDestination,
 	                DestinationName: tDestinationName,
