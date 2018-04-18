@@ -28,6 +28,7 @@ Module.register("MMM-DCMetroTrainTimes", {
         colorizeLines: false, // default to no color
         incidentCodesOnly: false, // default to full text incident line listing
         hideTrainTimesLessThan: 0, // default to show all train times
+	showDestinationFullName: true, // default to show full train destination names
 	},
 	// the start function
 	start: function() {
